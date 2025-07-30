@@ -2,4 +2,4 @@ function numo_messgr_fix() {
 
 }
 
-console.log('test');
+console.log('test2');
