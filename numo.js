@@ -1,7 +1,7 @@
 function numo_messgr_fix() {
     submess = document.querySelectorAll('.header-messengers > *');
     for (let ies=0; ies<submess.length; ies++) {
-        submess[ies].style.display = 'inline-block';
+        submess[ies].style.display = 'inline';
     }
 }
 
