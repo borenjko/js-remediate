@@ -10,4 +10,3 @@ function numo_fixes() {
 }
 
 numo_fixes();
-window.alert('test2');
