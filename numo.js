@@ -6,4 +6,4 @@ function numo_fixes() {
     numo_messgr_fix();
 }
 
-console.log('test2');
+numo_fixes();
