@@ -18,8 +18,7 @@ function numo_messgr_fix() {
 function numo_linkblock_fix()
 {
     services_list = document.querySelector('.services-tiles-list');
-    for (let isl=0; isl<services_list.length; isl++) {
-        services_list[isl].innerHTML = '<div class="services-tiles-list-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0%);" onlick="location.href='/'"> \
+    services_list.innerHTML = '<div class="services-tiles-list-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0%);" onlick="location.href=\'/\'"> \
                     <div class="services-tiles-item" href="/skills"> \
                         <span class="services-tiles-item-image"> \
                             <img class="services-tiles-item-i" src="./themes/numo/assets/images/service-img-1.jpg" alt="" loading="lazy" width="472" height="320"> \
@@ -30,8 +29,8 @@ function numo_linkblock_fix()
                             <a class="services-tiles-item-more" href="/">Детальніше →</a> \
                         </span> \
                     </div> \
-                </div>' + services_list[isl].innerHTML;
-    }
+                </div>' + services_list.innerHTML;
+    
 }
 
 function numo_fixes() {
