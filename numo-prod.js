@@ -263,6 +263,9 @@ class BugFixNumoBotFixLinkForScreenReader extends BugFix
 //var fixingScrollToBtnFocusing = new BuxFixScrolltoTopFocusing(document.getElementById('scrollToTopBtn'));
 //fixingScrollToBtnFocusing.fix();
 
+
+document.addEventListener('DOMContentLoaded', function () {
+
 var fixingSkipLink = new BugIncorrectSkipLinkOnNumo(document.querySelector('.skip-link'));
 fixingSkipLink.fix();
 
@@ -289,3 +292,5 @@ fixingNumoBotImg.fix();
 
 var fixingAriaCurrents = new BugFixAriaCurrents();
 fixingAriaCurrents.fix();
+
+})
