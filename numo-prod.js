@@ -47,7 +47,7 @@ class BugFix
 
     fix()
     {
-        if (this.#node) {
+        if (this.node) {
             this.fixCore();
         }
     }
@@ -192,8 +192,8 @@ class BugFixNumoSkillsSetCollapsedPseudoSectionsRND extends BugFixMultiple
         if (becomesButton) {
             nodeCollapsion = node.querySelector('div.collapse');
             becomesButton.role = 'button';
-            becomesButton.setAttribute('aria-controls') = nodeCollapsion.id;
-            becomesButton.setAttribute('aria-expanded') = 'false';
+            becomesButton.setAttribute('aria-controls', nodeCollapsion.id);
+            becomesButton.setAttribute('aria-expanded', 'false');
         }
     }
 }
